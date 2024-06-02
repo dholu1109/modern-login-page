@@ -1,0 +1,110 @@
+@font-face {
+    font-family: le;
+    src: url(Futura\ Std\ Medium.ttf);
+}
+
+* {
+    font-family: le
+}
+
+body {
+   background-size: cover;
+    height: 100vh;
+    background-image: url(350014.jpg);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container .box {
+    background-color: rgba(255, 255, 255, 0.06);
+	-webkit-backdrop-filter: blur(15px);
+	backdrop-filter: blur(15px);
+	-webkit-box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 25px 23px rgba(0, 0, 0, 0.15);
+	border: 1.5px solid rgba(255, 255, 255, 0.06);
+    text-align: center;
+    color: white;
+    width: 450px;
+    height: 500px;
+    position: relative;
+    top: 20vh;
+    transition: all 1.5s ease-in;
+    border-radius: 50px;
+    line-height: 100px;
+}
+
+.container .box:hover {
+    box-shadow: 20px 15px 150px 8px skyblue;
+}
+
+.container .box h1 {
+    font-family: le;
+    padding-top: 20px;
+    letter-spacing: 5px;
+}
+
+.container .box input {
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+}
+
+.container .box input::placeholder {
+    color: white;
+    font-weight: 600px;
+}
+
+.container .box input[type="email"] {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: 600px;
+    letter-spacing: 3px;
+}
+
+.container .box input[type="password"] {
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+    font-weight: 1000px;
+    letter-spacing: 3px;
+}
+
+.container .box button {
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border: none;
+}
+
+.shape1 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background: -o-linear-gradient(315deg, #ff5b84, #eb3461);
+    background: linear-gradient(135deg, #ff5b84, #eb3461);
+    border-radius: 50%;
+    bottom: 15%;
+    right: 55%;
+    z-index: -1;
+}
+
+.shape2 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    background: -o-linear-gradient(315deg, #426cf8, #3ebdf0);
+    background: linear-gradient(135deg, #426cf8, #3ebdf0);
+    border-radius: 50%;
+    top: 15%;
+    left: 55%;
+    z-index: -1;
+}
